@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 // ─── Claude: add prototype component imports here ───────────────────────────
+import { NavigationBuilderComponent } from './prototypes/navigation-builder-travis/navigation-builder-travis.component';
 
 // Initialize configurability with an empty config before the module loads.
 // In production apps this is populated from window['CONFIG'] — prototypes use
@@ -31,6 +32,7 @@ if (typeof window !== 'undefined') {
         AppComponent,
         HomeComponent,
         // ─── Claude: add prototype components to declarations here ──────────
+        NavigationBuilderComponent,
     ],
     imports: [
         BrowserModule,
